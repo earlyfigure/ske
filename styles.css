@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:black;
+}
+
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px; /* Total width of the grid */
+    height: 960px; /* Total height of the grid */
+    background-color: black;
+    border: 1px solid #ccc;
+}
+
+.grid-item {
+    width: 60px; /* Each grid item should fit in a 960px width grid with 16 items per row */
+    height: 60px; /* Same as width to keep squares */
+    background-color: black;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+.grid-item:hover {
+    background-color: #4CAF50; /* Change color on hover */
+}
